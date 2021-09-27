@@ -1,3 +1,228 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 480px) {
+  .buttom-spreadImage {
+    background-color: #252b42;
+  }
+  .stay-hungry {
+    font-size: 2rem;
+  }
+  .lowerstay-hungry {
+    font-size: 1.75rem;
+  }
+
+  .available {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .btn-con {
+    flex-direction: column;
+    left: 30%;
+  }
+
+  .lowerbtn {
+    padding-top: 2rem;
+  }
+
+  .button-i {
+    margin: 0 auto;
+  }
+
+  .button-ii {
+    margin: 15px auto 0 auto;
+  }
+
+  .rightImg {
+    height: 300px;
+    /* position: absolute;
+    margin-top: 20px;
+    top: 70%;
+    right: 5%; */
+  }
+
+  .groupImg {
+    display: none;
+  }
+
+  .conAll {
+    background-color: #fafafa;
+  }
+
+  .text-bottom {
+    display: none;
+  }
+
+  .flexCon {
+    flex-direction: column;
+  }
+
+  .txt-con {
+    text-align: center;
+  }
+
+  .small-con {
+    margin-left: 40px;
+  }
+
+  .btm-con {
+    margin: 1rem auto;
+  }
+
+  .btm-logo {
+    display: none;
+  }
+
+  .para-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .spreadImage {
+    background-image: url(../images/coverImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    /* width: 100%; */
+  }
+
+  .buttom-spreadImage {
+    background-image: url(../images/lowerBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+  }
+
+  .food-app {
+    color: #fff;
+  }
+
+  .stay-hungry {
+    color: #fff;
+  }
+  .download {
+    color: #fff;
+  }
+
+  .btn-con {
+    /* flex-direction:row; */
+    margin-top: 4rem;
+    flex-grow: 1;
+  }
+
+  .button-ii {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .rightImg {
+    display: none;
+  }
+
+  .groupImg {
+    width: 500px;
+  }
+
+  .line {
+    width: 60%;
+    margin: 0 auto 2.5rem auto;
+  }
+  .bottom-con {
+    margin-top: 25rem;
+  }
+
+  .text-top {
+    display: none;
+  }
+  .txt-con {
+    padding-top: 6.5rem;
+  }
+  .flip {
+    flex-direction: row-reverse;
+  }
+
+  .unflip {
+    flex-direction: row;
+  }
+
+  .para-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .spreadImage {
+    background-image: url(../images/coverImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    height: 80%;
+    /* width: 105%; */
+  }
+
+  .buttom-spreadImage {
+    background-image: url(../images/lowerBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    height: 450px;
+  }
+
+  .food-app {
+    color: #fff;
+  }
+  .stay-hungry {
+    color: #fff;
+  }
+  .download {
+    color: #fff;
+  }
+
+  .btn-con {
+    /* flex-direction:row; */
+    margin-top: 4rem;
+    flex-grow: 1;
+  }
+
+  .button-ii {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .rightImg {
+    display: none;
+  }
+
+  .bottom-con {
+    margin-top: 28rem;
+  }
+  .line {
+    width: 55%;
+    margin: 0 auto 3rem auto;
+  }
+
+  .text-top {
+    display: none;
+  }
+
+  .imagescon {
+    width: 350px;
+  }
+
+  .flip {
+    flex-direction: row-reverse;
+  }
+
+  .unflip {
+    flex-direction: row;
+  }
+
+  .para-2 {
+    display: none;
+  }
+}
