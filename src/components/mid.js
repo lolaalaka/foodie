@@ -53,10 +53,10 @@ const Mid = () => {
 
           <div className="txt-con text-left lg:pt-32 lg:w-5/12 mx-auto">
             <p className="text-newColor font-bold lg:text-xl">{item.toptext}</p>
-            <p className="mt-5 text-2xl font-extrabold lg:text-3xl ">
+            <p className="mt-5 mx-2 text-2xl font-extrabold lg:text-3xl ">
               {item.midtext}
             </p>
-            <p className="mt-7 text-textColor font-semibold lg:text-lg">
+            <p className="mt-7 mx-2 text-textColor font-semibold lg:text-lg">
               {item.bottomtext}
             </p>
           </div>
@@ -68,7 +68,7 @@ const Mid = () => {
           <p className="textCn mb-10 text-white stay-hungry lowerstay-hungry text-5xl font-extrabold">
             Download the app now
           </p>
-          <p className="textCn available text-xl text-white">
+          <p className="textCn mx-5 available text-xl text-white">
             Available on your favorite store. Start your premium experience now
           </p>
           <div className="lowerbtn btn-con flex">

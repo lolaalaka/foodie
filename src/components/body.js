@@ -14,7 +14,7 @@ const Body = () => {
         <div className="spreadImage relative conAll">
           <div className="text-center pt-10">
             <p className="font-bold food-app textCon">Food App</p>
-            <p className="mt-5 mx-5 stay-hungry text-5xl font-extrabold textCon">
+            <p className="mt-5 mx-2 stay-hungry text-5xl font-extrabold textCon">
               Why stay hungry when <br /> you can order from Bella Onojie
             </p>
             <p className="mt-7 mx-5 download text-xl text-textColor textCon">
