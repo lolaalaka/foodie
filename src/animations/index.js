@@ -96,7 +96,6 @@ export const midAnimation = () => {
       trigger: ".midCon",
       start: "bottom 90%",
       end: "bottom 95%",
-      markers: true,
     },
     duration: 0.5,
     opacity: 0,
