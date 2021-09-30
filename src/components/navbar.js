@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/output.css";
 import logo from "../images/phone-logo.png";
 import ham from "../images/ham.png";
+import { navAnimation } from "../animations";
 
-export default function Navbar({ fixed }) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  useEffect(() => {
+    navAnimation();
+  }, []);
+
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between pt-3 mb-4">
@@ -16,7 +21,7 @@ export default function Navbar({ fixed }) {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <img src={ham} alt="ham" />
+              <img src={ham} alt="ham" className="navLis" />
             </button>
           </div>
           <div
@@ -26,16 +31,16 @@ export default function Navbar({ fixed }) {
             }
           >
             <ul className="flex flex-col cursor-pointer w-48 bg-yellow-50 bg-opacity-50 sm:ml-auto sm:flex-row sm:w-auto sm:bg-white ">
-              <li className="text-xl text-gray-600 hover:text-newColor cursor-pointer px-3 py-2 flex items-center ml-7">
+              <li className="navLis text-xl text-gray-600 hover:text-newColor cursor-pointer px-3 py-2 flex items-center ml-7">
                 Home
               </li>
-              <li className="text-xl cursor-pointer text-gray-600 hover:text-newColor px-3 py-2 flex items-center ml-7 lg:ml-24">
+              <li className="navLis text-xl cursor-pointer text-gray-600 hover:text-newColor px-3 py-2 flex items-center ml-7 lg:ml-24">
                 Product
               </li>
-              <li className="text-xl cursor-pointer text-gray-600 hover:text-newColor px-3 py-2 flex items-center  ml-7 lg:ml-24">
+              <li className="navLis text-xl cursor-pointer text-gray-600 hover:text-newColor px-3 py-2 flex items-center  ml-7 lg:ml-24">
                 FAQ
               </li>
-              <li className="text-xl cursor-pointer text-gray-600 hover:text-newColor px-3 py-2 flex items-center  ml-7 lg:ml-24">
+              <li className="navLis text-xl cursor-pointer text-gray-600 hover:text-newColor px-3 py-2 flex items-center  ml-7 lg:ml-24">
                 Contact
               </li>
             </ul>

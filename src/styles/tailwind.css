@@ -37,10 +37,7 @@
 
   .rightImg {
     height: 300px;
-    /* position: absolute;
-    margin-top: 20px;
-    top: 70%;
-    right: 5%; */
+    top: 90%;
   }
 
   .groupImg {
@@ -86,7 +83,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 80%;
+    height: 450px;
     /* width: 100%; */
   }
 
@@ -104,6 +101,7 @@
 
   .stay-hungry {
     color: #fff;
+    font-size: 2.3rem;
   }
   .download {
     color: #fff;
@@ -126,6 +124,7 @@
 
   .groupImg {
     width: 500px;
+    top: 55%;
   }
 
   .line {
@@ -133,7 +132,7 @@
     margin: 0 auto 2.5rem auto;
   }
   .bottom-con {
-    margin-top: 25rem;
+    margin-top: 22rem;
   }
 
   .text-top {

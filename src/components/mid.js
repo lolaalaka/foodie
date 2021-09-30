@@ -1,8 +1,13 @@
 import gridone from "../images/gridone.png";
 import gridtwo from "../images/gridtwo.png";
 import gridthree from "../images/gridthree.png";
+import { midAnimation } from "../animations";
+import { useEffect } from "react";
 
 const Mid = () => {
+  useEffect(() => {
+    midAnimation();
+  }, []);
   const grid = [
     {
       leftside: gridone,
@@ -29,7 +34,7 @@ const Mid = () => {
   ];
 
   return (
-    <div>
+    <div className="midCon">
       {grid.map((item) => (
         <div
           key={item.id}
@@ -59,18 +64,18 @@ const Mid = () => {
       ))}
 
       <div className="buttom-spreadImage mt-5">
-        <div className="text-center py-24">
-          <p className="mb-10 text-white stay-hungry lowerstay-hungry text-5xl font-extrabold">
+        <div className=" text-center py-24">
+          <p className="textCon mb-10 text-white stay-hungry lowerstay-hungry text-5xl font-extrabold">
             Download the app now
           </p>
-          <p className="available text-xl text-white">
+          <p className="textCon available text-xl text-white">
             Available on your favorite store. Start your premium experience now
           </p>
-          <div className="lowerbtn btn-con flex">
-            <button className="button-i block ml-auto mr-3 bg-newColor hover:bg-transparent border  border-transparent hover:border-newColor hover:text-newColor text-white font-semibold py-3 px-4 rounded-full w-40">
+          <div className=" textCon lowerbtn btn-con flex">
+            <button className="textCon button-i block ml-auto mr-3 bg-newColor hover:bg-transparent border  border-transparent hover:border-newColor hover:text-newColor text-white font-semibold py-3 px-4 rounded-full w-40">
               Playstore
             </button>
-            <button className="button-ii block mr-auto ml-3 bg-transparent hover:bg-newColor font-semibold border border-newColor text-newColor hover:text-white hover:border-transparent py-3 px-4 rounded-full w-40">
+            <button className="textCon button-ii block mr-auto ml-3 bg-transparent hover:bg-newColor font-semibold border border-newColor text-newColor hover:text-white hover:border-transparent py-3 px-4 rounded-full w-40">
               App Store
             </button>
           </div>

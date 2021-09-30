@@ -2,10 +2,15 @@ import logo from "../images/phone-logo.png";
 import twitter from "../images/twitter.png";
 import instagram from "../images/instagram.png";
 import facebook from "../images/facebook.png";
+import { footerAnimation } from "../animations";
+import { useEffect } from "react";
 
 const Footer = () => {
+  useEffect(() => {
+    footerAnimation();
+  }, []);
   return (
-    <footer className="relative  mx-5 my-5">
+    <footer className="relative  mx-5 my-5 footerCon">
       <div className="flex items-center justify-between">
         <div>
           <img src={logo} alt="logo" className="btm-logo pl-3" />
