@@ -32,15 +32,9 @@ export const textAnimation = () => {
       ease: "Power2.easeInOut",
     })
     .from(".rightImg", {
-      scrollTrigger: {
-        trigger: ".btn-con",
-        start: " top 0",
-        end: "center 0",
-        toggleActions: "play none none none",
-      },
-      duration: 0.3,
+      duration: 0.5,
       opacity: 0,
-      x: -50,
+      x: -70,
       ease: "Power4.easeInOut",
     })
     .from(".text-top", {
@@ -97,11 +91,12 @@ export const midAnimation = () => {
       stagger: 0.5,
     });
   });
-  tl.from(".textCon", {
+  gsap.from(".textCn", {
     scrollTrigger: {
       trigger: ".midCon",
-      start: "bottom 95%",
-      end: "bottom bottom",
+      start: "bottom 90%",
+      end: "bottom 95%",
+      markers: true,
     },
     duration: 0.5,
     opacity: 0,
@@ -112,13 +107,13 @@ export const midAnimation = () => {
 };
 
 export const footerAnimation = () => {
-  tl.from(".footerCon", {
+  gsap.from(".footerCon", {
     scrollTrigger: {
       trigger: ".midCon",
-      start: "bottom 95%",
-      end: "bottom bottom",
+      start: "bottom 90%",
+      end: "bottom 95%",
     },
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
     ease: "power2.easeIn",
   });

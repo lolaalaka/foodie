@@ -65,17 +65,17 @@ const Mid = () => {
 
       <div className="buttom-spreadImage mt-5">
         <div className=" text-center py-24">
-          <p className="textCon mb-10 text-white stay-hungry lowerstay-hungry text-5xl font-extrabold">
+          <p className="textCn mb-10 text-white stay-hungry lowerstay-hungry text-5xl font-extrabold">
             Download the app now
           </p>
-          <p className="textCon available text-xl text-white">
+          <p className="textCn available text-xl text-white">
             Available on your favorite store. Start your premium experience now
           </p>
-          <div className=" textCon lowerbtn btn-con flex">
-            <button className="textCon button-i block ml-auto mr-3 bg-newColor hover:bg-transparent border  border-transparent hover:border-newColor hover:text-newColor text-white font-semibold py-3 px-4 rounded-full w-40">
+          <div className="lowerbtn btn-con flex">
+            <button className="textCn button-i block ml-auto mr-3 bg-newColor hover:bg-transparent border  border-transparent hover:border-newColor hover:text-newColor text-white font-semibold py-3 px-4 rounded-full w-40">
               Playstore
             </button>
-            <button className="textCon button-ii block mr-auto ml-3 bg-transparent hover:bg-newColor font-semibold border border-newColor text-newColor hover:text-white hover:border-transparent py-3 px-4 rounded-full w-40">
+            <button className="textCn button-ii block mr-auto ml-3 bg-transparent hover:bg-newColor font-semibold border border-newColor text-newColor hover:text-white hover:border-transparent py-3 px-4 rounded-full w-40">
               App Store
             </button>
           </div>
