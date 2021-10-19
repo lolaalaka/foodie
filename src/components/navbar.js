@@ -30,7 +30,7 @@ export default function Navbar() {
               (navbarOpen ? " flex" : " hidden")
             }
           >
-            <ul className="flex flex-col cursor-pointer w-48 bg-yellow-50 bg-opacity-50 sm:ml-auto sm:flex-row sm:w-auto sm:bg-white ">
+            <ul className="flex flex-col cursor-pointer w-48 bg-opacity-50 sm:ml-auto sm:flex-row sm:w-auto sm:bg-white ">
               <li className="navLis text-xl text-gray-600 hover:text-newColor cursor-pointer px-3 py-2 flex items-center ml-7">
                 Home
               </li>
